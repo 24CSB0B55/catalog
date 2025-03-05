@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+  <title>Store</title>
+  <link rel="stylesheet" href="catalog.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <h1>SUPE-STORE</h1>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="wish.html">Wishlist</a></li>
+        <li><a href="orders.html">Your Orders</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        
+      </ul>
+    </nav>
+    <button class="subscribe-btn" onclick="openModal('subscribeModal')">Login</button>
+  </header>
+  <section class="hero">
+    <div class="hero-overlay">
+      <h2>Redeem The New Offers Available Now!!</h2>
+      <p>Discover the latest trends,Offers and  </p>
+      <button onclick="scrollToSection('news')">Explore More</button>
+    </div>
+  </section>
+  <section id="news" class="news-section">
+    <h2>Latest Products</h2>
+    <div class="news-grid">
+      <article class="news-card">
+        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcR1-Tl2YvQwG467_gi1g2Bli108VLcJMkYrftj66oI36uSjb4ZhX6qOCjvHwsccHfCDjfcHCtg0qhenLLXvuoh62MhHHobXH_2pigLVDTJS2WB5sBIqx3rp&usqp=CAE" alt="New Campus Canteen">
+        <div class="card-content">
+          <h3>Echo Pop, a smart speaker with Alexa and Bluetooth connectivity</h3>
+          <p> This speaker delivers loud sound with balanced bass, perfect for filling any room with ...</p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <hr>
+          <p >$70.00</p>
+          <button class="subscribe-btn" onclick='document.getElementById("item1").innerHTML="Added to cart"' id="item1">Add to Cart</button>
+          <button class="subscribe-btn1" onclick="openModal('wish')">Move to wishlist</button>
+        </div>
+      </article>
+      <article class="news-card">
+        <img src="https://m.media-amazon.com/images/I/81yq+m6ZegL._SX569_.jpg" alt="cabinet" height="250px">
+        <div class="card-content">
+          <h3>MECHDEL Cupboard Rack For Clothes</h3>
+          <p>Plastic Cabinet For Storage Foldable Wardrobe For Clothes Plastic Cloth Rack For Storage Clothes Storage (CUPBOARD RACK-1 DOOR - TRANSPARENT, 2PCS)</p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <hr>
+          <p>$49.99</p>
+          <button class="subscribe-btn" onclick='document.getElementById("item2").innerHTML="Added to cart" 'id="item2">Add to Cart</button>
+          <button class="subscribe-btn1" onclick="openModal('wish')">Move to wishlist</button>
+        </div>
+      </article>
+      <article class="news-card">
+        <img src="https://m.media-amazon.com/images/I/81BuqXOOsEL._SX569_.jpg" alt="bag" height="250px">
+        <div class="card-content">
+          <h3>Storite 2 Pack Nylon 33</h3>
+          <p> L PVC Transparent Moisture Proof Storage box for Clothes Closet Wardrobe Organizer for Clothes Saree Bags with Carry Handle - (Grey, 44 x 31 x 24 cm)</p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <hr>
+          <p>$15.75</p><button class="subscribe-btn" onclick='document.getElementById("item3").innerHTML="Added to cart" 'id="item3">Add to Cart</button>
+          <button class="subscribe-btn1" onclick="openModal('wish')">Move to wishlist</button>
+        </div>
+      </article>
+      <article class="news-card">
+        <img src="https://m.media-amazon.com/images/I/618KajCUdFL._SX569_.jpg" alt="oven">
+        <div class="card-content">
+          <h3>Echo Pop, a smartHouse of Quirk Stackable Collapsible</h3>
+          <p> Storage Boxes with Wheels and Doors – Versatile Plastic Containers for Home Organization 2 Layer 40cm (White)</p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <hr>
+          <p>$25.50</p>
+          <button class="subscribe-btn" onclick='document.getElementById("item4").innerHTML="Added to cart" 'id="item4">Add to Cart</button>
+          <button class="subscribe-btn1" onclick="openModal('wish')">Move to wishlist</button>
+        </div>
+      </article>
+      <article class="news-card">
+        <img src="https://m.media-amazon.com/images/I/61PCvi1H6iL._SX450_.jpg" alt="oven">
+        <div class="card-content">
+          <h3>Foodie Puppies Flat Round Crystal</h3>
+          <p>Mix Milky Stone - (900g) for Aquariums, Fish Tank, Fireplace, Firepit Glass, Vase Filler, Plants Pot, Garden, Lawn, Table Decor for Indoor and Outdoor Home Decor</p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <hr>
+          <a href="#">limited time deal</a>
+          <p>$10.00</p>
+          <button class="subscribe-btn" onclick='document.getElementById("item5").innerHTML="Added to cart" 'id="item5">Add to Cart</button>
+          <button class="subscribe-btn1" onclick="openModal('wish')">Move to wishlist</button>
+        </div>
+      </article>
+      <article class="news-card">
+        <img src="https://m.media-amazon.com/images/I/51SxA9wy1RL._SY450_.jpg" alt="oven">
+        <div class="card-content">
+          <h3>Amazon Basics Folding Jaw</h3>
+          <p> Amazon Basics Folding Jaw Clamp Poop Scooper | Pet Waste Picker | Medium</p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <hr>
+          <a href="#">limited time deal</a>
+          <p>$5.99</p>
+          <button class="subscribe-btn" onclick='document.getElementById("item6").innerHTML="Added to cart" 'id="item6">Add to Cart</button>
+          <button class="subscribe-btn1" onclick="openModal('wish')">Move to wishlist</button>
+        </div>
+      </article>
+      <article class="news-card">
+        <img src="https://m.media-amazon.com/images/I/51nX5R2aVOL._SX300_SY300_QL70_FMwebp_.jpg" alt="oven">
+        <div class="card-content">
+          <h3>Samsung Galaxy M35 5G</h3>
+          <p>(Thunder Grey,6GB RAM,128GB Storage)| Corning Gorilla Glass Victus+| AnTuTu Score 595K+ | Vapour Cooling Chamber | 6000mAh Battery | 120Hz Super AMOLED Display| Without Charger</p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <hr>
+          <a href="#">limited time deal</a>
+          <p>$149.99</p>
+          <button class="subscribe-btn" onclick='document.getElementById("item7").innerHTML="Added to cart" 'id="item7">Add to Cart</button>
+          <button class="subscribe-btn1" onclick="openModal('wish')">Move to wishlist</button>
+        </div>
+      </article>
+      <article class="news-card">
+        <img src="https://m.media-amazon.com/images/I/51oMWaW7tKL._SX569_.jpg" alt="oven">
+        <div class="card-content">
+          <h3>OnePlus Nord Buds 2r</h3>
+          <p>OnePlus Nord Buds 2r True Wireless in Ear Earbuds with Mic, 12.4mm Drivers, Playback:Upto 38hr case,4-Mic Design, IP55 Rating [Deep Grey]
+            Visit the OnePlus Store</p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <hr>
+          <a href="#">limited time deal</a>
+          <p>$49.99</p>
+          <button class="subscribe-btn" onclick='document.getElementById("item8").innerHTML="Added to cart" 'id="item8">Add to Cart</button>
+          <button class="subscribe-btn1" onclick="openModal('wish')">Move to wishlist</button>
+        </div>
+      </article>
+
+    </div>
+  </section>
+  <div id="subscribeModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('subscribeModal')">&times;</span>
+      <h2>Login for More Updates</h2>
+      <form id="subscribeForm">
+        <label for="subscribeEmail">Email:</label>
+        <input type="email" id="subscribeEmail" placeholder="Enter your email" required>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+  <div id="addtocart" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('addtocart')">&times;</span>
+      <h2>Your Cart</h2>
+      <div class="card-content">
+       <h3>Item-1</h3>
+
+      <button onlick="displayDate()">confirm order</button>
+      <p>Confirmed Order on</p>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <p>Privacy policy | Refund policy | Terms of service</p>
+    <p>&copy; 2025 SUPE-STORE. All Rights Reserved.</p>
+  </footer>
+  <script src="java.js"></script>
+</body>
+</html>

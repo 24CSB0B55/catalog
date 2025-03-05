@@ -1,0 +1,224 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body, html {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    scroll-behavior: smooth;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    padding: 15px 20px;
+    color: white;
+  }
+  .logo h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+  .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  .nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .nav ul li a:hover {
+    color: #ff4a57;
+  }
+  .subscribe-btn {
+    background: #ff4a57;
+    padding: 10px 15px;
+    border: none;
+    border-radius:5px;
+    box-shadow:#aaa;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  .subscribe-btn:hover {
+    background: #e0434e;
+  }
+  .subscribe-btn1 {
+    background: white;
+    padding: 10px 15px;
+    border: none;
+    font-weight: bold;
+    border-radius:5px;
+    box-shadow:#aaa;
+    color: #ff4a57;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  .subscribe-btn1:hover {
+    background:whitesmoke ;
+  }
+  .hero {
+    background-color:whitesmoke;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-overlay {
+    background: rgba(0,0,0,0.6);
+    padding: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+  }
+  .hero-overlay h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  .hero-overlay p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .hero-overlay button {
+    padding: 10px 20px;
+    background: #ff4a57;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  .hero-overlay button:hover {
+    background: #e0434e;
+  }
+  .news-section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  .news-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  .news-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    padding: 20px;
+  }
+  .news-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  .news-card:hover {
+    transform: translateY(-2px);
+  }
+  .news-card img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+  }
+  .card-content {
+    padding: 15px;
+    text-align: left;
+  }
+  .card-content h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  .card-content hr{
+    margin-bottom:10px;
+  }
+  .card-content p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .checked{
+    color:orange;
+  }
+  .card-content a {
+    background: #ff4a57;
+    margin:0px;
+    text-decoration:none;
+    padding: 10px 15px;
+    border: none;
+    border-radius:5px;
+    color: white;
+    cursor: pointer;
+    transform: 0.3s ease;
+  }
+ .card-content a:hover{
+    transition:scale(1.1);
+ }
+
+  .footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+  }
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+  }
+  .modal-content {
+    background: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    position: relative;
+  }
+  .close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #aaa;
+  }
+  .close:hover {
+    color: #000;
+  }
+  .modal form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .modal form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .modal form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #ff4a57;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  .modal form button:hover {
+    background: #e0434e;
+  }
+  

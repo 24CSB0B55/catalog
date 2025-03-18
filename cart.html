@@ -4,8 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
+    <link rel="stylesheet" href="catalog.css">
 </head>
 <body>
-    
+
+    <div class="header">
+        <div class="logo"><h1>Your Cart</h1></div>
+        <div class="nav">
+            <ul>
+                <li><a href="catalog.html">Shop</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="news-section">
+        <h2>Items in Cart</h2>
+        <ul id="cartItems"></ul>
+        <p><strong>Total: $<span id="cartTotal">0.00</span></strong></p>
+        <button class="subscribe-btn1" id="clearCart">Clear Cart</button>
+    </div>
+
+    <script src="java.js"></script>
 </body>
 </html>

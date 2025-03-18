@@ -1,13 +1,11 @@
-// Retrieve cart from local storage or initialize an empty one
-let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-// Function to update cart display on cart.html
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
 function updateCartDisplay() {
     const cartItemsList = document.getElementById("cartItems");
     const cartTotal = document.getElementById("cartTotal");
 
     if (cartItemsList) {
-        cartItemsList.innerHTML = ""; // Clear previous items
+        cartItemsList.innerHTML = ""; 
         let total = 0;
 
         cart.forEach(item => {
@@ -21,7 +19,6 @@ function updateCartDisplay() {
     }
 }
 
-// Event listener for "Add to Cart" buttons
 document.querySelectorAll(".addToCart").forEach(button => {
     button.addEventListener("click", function(event) {
         event.preventDefault();
@@ -35,25 +32,20 @@ document.querySelectorAll(".addToCart").forEach(button => {
     });
 });
 
-// Function to clear cart
 function clearCart() {
-    localStorage.removeItem("cart"); // Remove cart from storage
-    cart = []; // Reset cart array
-    updateCartDisplay(); // Refresh cart display
+    localStorage.removeItem("cart"); 
+    cart = []; 
+    updateCartDisplay();
 }
 
-// Add event listener to "Clear Cart" button
 const clearCartBtn = document.getElementById("clearCart");
 if (clearCartBtn) {
     clearCartBtn.addEventListener("click", clearCart);
 }
 
-// Call updateCartDisplay if on cart.html
 if (document.getElementById("cartItems")) {
     updateCartDisplay();
 }
-
-// Call updateCartDisplay if on cart.html
 if (document.getElementById("cartItems")) {
     updateCartDisplay();
 }
